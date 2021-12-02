@@ -1,10 +1,24 @@
 body {
-    background-image: url(../assets/service1.png);
+    /* background-image: url(../assets/service1.png); */
     background-size: cover;
-    
+
+}
+.navtop{
+    color:#092df7 !important; 
+    float: right !important; 
+
 }
 
-nav {
+.learnmore input[type=submit] {
+    color: #0c0c0c;
+    border-radius: 25px;
+    background-color: #092df7;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* nav {
     display: flex;
     justify-content: space-between;
     color: #0c23f3;
@@ -31,23 +45,35 @@ nav .row ul li a {
 
 .row p {
     border-bottom: 3px solid gray;
-    padding-bottom: 10px;
-}
+    padding-bottom: 10px; */
+
 
 .content {
     width: 70%;
     text-align: center;
-    color: #101011;
+    /* color: #101011; */
     font-size: 3rem;
     font-weight: 700;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    /* color: #092df7; */
 }
-
+.content3{
+    width: 70%;
+    text-align: center;
+    /* color: #101011; */
+    font-size: 3rem;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    /* color: #092df7; */
+}
 .content2 {
     width: 70%;
     text-align: center;
-    color: #080808;
+    /* color: #080808; */
     font-size: 1.5rem;
     margin-left: auto;
     margin-right: auto;
@@ -176,7 +202,7 @@ nav .row ul li a {
     margin: 1%;
 }
 .total-price{
-    width: 98%;
+    width: 70%;
     margin-left: 1%;
     height:auto;
     margin-left: auto;
@@ -205,8 +231,6 @@ nav .row ul li a {
     width: 150%;
     /* padding-top: 25px; */
     font-weight: 700;
-
-
  }  
 
  .jobs-body{
@@ -216,6 +240,17 @@ nav .row ul li a {
     display: flex;
     align-items: center;
  }   
+.contact_section {
+    background-image: url(../assets/pexels-dom-j-45980.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
 footer {
     display: flex;
     justify-content: space-around;
@@ -226,4 +261,35 @@ footer {
     font-size: 40px;
     font-weight: bold;
 }
+.about_section {
+    /* background-image: url(../assets/pexels-cottonbro-6765167.jpg); */
+    background-size: cover;
+    background-position: center;
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:snow;
 
+}
+.hero_section {
+    background-image: url(../assets/towel.jpg);
+
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: cursive;
+}
+.contact-us{
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

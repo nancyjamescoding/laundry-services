@@ -85,6 +85,15 @@ function showLaundryJobs() {
     })
 }
 
+function isValid(firstName, lastName, location, email, phone, quantity) {
+    if ((firstName === "") || (lastName === "") || (location === "") || (email ==="" ) || ( phone=== "") || (quantity === "")){
+       return false
+    } 
+    else {
+        return true
+    }
+} 
+
 function processLaundryWork() {
     const firstName = document.getElementById("firstname").value
     const lastName = document.getElementById("lastname").value
@@ -92,11 +101,16 @@ function processLaundryWork() {
     const email = document.getElementById("email").value
     const phone = document.getElementById("telephone").value
     const quantity = document.getElementById("quantity").value
-    const totalPrice = quantity * pricePerKg
 
-    const laundryJob = new LaundryJob(firstName, lastName, location, email, phone, quantity, totalPrice)
-    orders.push(laundryJob)
-    document.getElementById("total-price").innerHTML = "Your total charge is " + totalPrice
+    let formIsValid = isValid(firstName, lastName, location, email, phone, quantity)
+
+    if (formIsValid) {
+        const totalPrice = quantity * pricePerKg
+        const laundryJob = new LaundryJob(firstName, lastName, location, email, phone, quantity, totalPrice)
+        orders.push(laundryJob)
+        // alert("Your total charge is " + totalPrice)
+        document.getElementById("total-price").innerHTML= `${firstName}, Your total charge is ${totalPrice}. Thankyou!`
+    } else {
+        alert("Enter your details")
+    }
 }
-
-
