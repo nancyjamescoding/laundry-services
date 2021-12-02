@@ -271,7 +271,7 @@ footer {
 }
 .hero_section {
     background-image: url(../assets/towel.jpg);
-    /* background-image: url(../assets/service1.png); */
+
     background-size: cover;
     background-position: center;
     height: 700px;
@@ -279,14 +279,13 @@ footer {
     justify-content: center;
     align-items: center;
     color:white;
-    /* font-weight: 900px; */
     font-family: cursive;
 }
 .contact-us{
     width:70%;
     margin-left: auto;
     margin-right: auto;
-    height: 400px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
