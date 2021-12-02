@@ -1,12 +1,36 @@
-body {
-    background-image: url(../assets/download\ \(2\).jpeg);
+.hero_section {
+    background-image: url(../assets/towel.jpg);
     background-size: cover;
+    background-position: center;
+    height: 150vh;
+    
 }
-
+.about_section {
+    background-image: url(../assets/pexels-cottonbro-6765167.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+}
+.btn {
+    width: 100%;
+}
+.contact_section {
+    background-image: url(../assets/pexels-dom-j-45980.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.input {
+    width: 50%;
+    margin: auto;
+}
+section {
+    display: flex;
+}
 nav {
     display: flex;
     justify-content: space-between;
-    color: #0c23f3;
+    color: #086cf0;
     font-size: 23px;
 }
 
@@ -25,7 +49,7 @@ nav .row ul li a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
-    color: #092df7;
+    color: #0f0aff;
 }
 
 .row p {
@@ -37,7 +61,7 @@ nav .row ul li a {
     margin-left: 100px;
     width: 600px;
     text-align: center;
-    color: #101011;
+    color: #e60aeeee;
     font-size: 64px;
 }
 
@@ -45,7 +69,7 @@ nav .row ul li a {
     margin-left: 100px;
     width: 600px;
     /* text-align: center; */
-    color: #080808;
+    color: #f7039aec;
     font-size: 30px;
     padding-left: 100px;
 }
@@ -60,7 +84,7 @@ nav .row ul li a {
     height: 50px;
     color: #0c0c0c;
     border-radius: 25px;
-    background-color: rgba(19, 15, 238, 0.5);
+    background-color: rgba(238, 15, 227, 0.945);
     border: none;
     font-size: 22px;
     font-weight: bold;
@@ -76,4 +100,23 @@ footer {
     padding: 20px;
     font-size: 40px;
     font-weight: bold;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#bg-image {
+    background: url("../assets/download.jpeg")
+    
+}
+/* .section-5 {
+    height: 100vh;
+        background-image: url("../assets/download\ \(1\).jpeg");
+    background-position: center;
+    background-repeat: no-repeat; */
+
+.section-5 p, h2, h3 {
+color: blue;
+
 }
