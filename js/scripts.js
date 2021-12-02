@@ -96,7 +96,7 @@ function processLaundryWork() {
 
     const laundryJob = new LaundryJob(firstName, lastName, location, email, phone, quantity, totalPrice)
     orders.push(laundryJob)
-    alert("Your total charge is " + totalPrice)
+    document.getElementById("total-price").innerHTML = "Your total charge is " + totalPrice
 }
 
 
